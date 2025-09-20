@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  linux-node-1:
+    image: alpine:latest
+    container_name: linux-node-1
+    ports:
+      - "2201:22"
+    expose:
+      - "22"
+    volumes:
+      - ./setup.sh:/setup.sh
+      - ./.env:/.env
+    # The `command` section now executes the mounted shell script.
+    command: sh /setup.sh
+  
+  linux-node-2:
+    image: alpine:latest
+    container_name: linux-node-2
+    ports:
+      - "2202:22"
+    expose:
+      - "22"
+    volumes:
+      - ./setup.sh:/setup.sh
+      - ./.env:/.env
+    # The `command` section now executes the mounted shell script.
+    command: sh /setup.sh
+  
+  linux-node-3:
+    image: alpine:latest
+    container_name: linux-node-3
+    ports:
+      - "2203:22"
+    expose:
+      - "22"
+    volumes:
+      - ./setup.sh:/setup.sh
+      - ./.env:/.env
+    # The `command` section now executes the mounted shell script.
+    command: sh /setup.sh
