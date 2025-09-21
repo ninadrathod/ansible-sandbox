@@ -1,6 +1,7 @@
 # ansible-sandbox
 This project is a boilerplate setup for Ansible-based automations.
-It will create three Docker containers, each mapped to ports 2201~2203, respectively
+It will create three Docker containers, each mapped to ports 2201~2203, respectively<br>
+Use [Ansible Installation Guide](https://docs.ansible.com/ansible/latest/installation_guide/index.html) to install Ansible on your system
 
 ### Go to your project directory
 ```
