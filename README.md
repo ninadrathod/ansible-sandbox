@@ -18,18 +18,18 @@ SSH_PASSWORD=<set_strong_password>
 
 # Run this script after creating Docker containers.
 
-ssh-keygen -f '/home/ninad/.ssh/known_hosts' -R '[localhost]:2203'
-ssh-keygen -f '/home/ninad/.ssh/known_hosts' -R '[localhost]:2202'
-ssh-keygen -f '/home/ninad/.ssh/known_hosts' -R '[localhost]:2201'
-ssh-keygen -f '/home/ninad/.ssh/known_hosts' -R '[0.0.0.0]:2203'
-ssh-keygen -f '/home/ninad/.ssh/known_hosts' -R '[0.0.0.0]:2202'
-ssh-keygen -f '/home/ninad/.ssh/known_hosts' -R '[0.0.0.0]:2201'
+ssh-keygen -f '/home/<user_user_id>/.ssh/known_hosts' -R '[localhost]:2203'
+ssh-keygen -f '/home/<user_user_id>/.ssh/known_hosts' -R '[localhost]:2202'
+ssh-keygen -f '/home/<user_user_id>/.ssh/known_hosts' -R '[localhost]:2201'
+ssh-keygen -f '/home/<user_user_id>/.ssh/known_hosts' -R '[0.0.0.0]:2203'
+ssh-keygen -f '/home/<user_user_id>/.ssh/known_hosts' -R '[0.0.0.0]:2202'
+ssh-keygen -f '/home/<user_user_id>/.ssh/known_hosts' -R '[0.0.0.0]:2201'
 ```
 ### Run Docker containers using the Makefile
 ```
 make up
 ```
-### now generate SSH keys using the following command (This command is needed only for the initial setup)
+### Now, generate SSH keys using the following command <br> (This command is needed only for the initial setup)
 ```
 ssh-keygen
 ```
