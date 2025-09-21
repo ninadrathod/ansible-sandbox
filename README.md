@@ -38,7 +38,7 @@ No need to pass any input for the next questions. Just press the enter key. This
 ### Now, copy the public keys into your containers using the following commands.
 NOTE: Run one at a time. Enter the same password that you used in the .env file when prompted
 ```
-ssh-copy-id -p 2201 ansibean@0.0.0.0
-ssh-copy-id -p 2202 ansibean@0.0.0.0
-ssh-copy-id -p 2203 ansibean@0.0.0.0
+ssh-copy-id -i ./id_ansibean.pub -p 2201 ansibean@0.0.0.0
+ssh-copy-id -i ./id_ansibean.pub -p 2202 ansibean@0.0.0.0
+ssh-copy-id -i ./id_ansibean.pub -p 2203 ansibean@0.0.0.0
 ```
